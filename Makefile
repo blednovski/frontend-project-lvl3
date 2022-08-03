@@ -8,4 +8,4 @@ build:
 	npm run build
 
 start:
-	npx webpack server
+	npx webpack serve
