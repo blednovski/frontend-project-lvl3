@@ -1,3 +1,5 @@
+import i18next from 'i18next';
+import ru from './locales/ru-RU.js';
 import validator from './utils/validator.js';
 
 const addedURLs = [];
@@ -20,5 +22,14 @@ const app = () => {
 
   input.focus();
 };
+
+const i18nextInstance = i18next.createInstance();
+i18nextInstance.init({
+  lng: 'ru',
+  debug: true,
+  resources: {
+    ru,
+  },
+});
 
 export default app;
